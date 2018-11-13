@@ -17,7 +17,7 @@ chardet2==2.0.3
 # TODO: We may drop 'django-imagekit' completely.
 django-imagekit==4.0.2
 git+https://github.com/django-haystack/django-haystack.git@4136ad76d9ca8b986107766f32a57c3b9136cff3#egg=django-haystack
-elasticsearch==6.3.1
+elasticsearch==5.5.3
 pyelasticsearch==1.4.1
 # TODO: 0.14.0 only supports Django 1.8 and 1.11.
 django-tastypie==0.14.1
