@@ -35,4 +35,4 @@ class DocumentationIndexView(TemplateView):
 
 def migrate_media_view(request):
     media_file = request.path.lstrip(settings.MEDIA_URL)
-    return redirect(url(media_file))
+    return redirect(urljoin(get_media_prefix(), quote(media_file)))
