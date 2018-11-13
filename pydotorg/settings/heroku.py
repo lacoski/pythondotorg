@@ -11,7 +11,7 @@ DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 HAYSTACK_CONNECTIONS = {
     'default': {
-        'ENGINE': 'haystack.backends.elasticsearch_backend.Elasticsearch2SearchEngine',
+        'ENGINE': 'haystack.backends.elasticsearch2_backend.Elasticsearch2SearchEngine',
         'URL': os.environ.get('BONSAI_URL'),
         'INDEX_NAME': 'haystack-prod',
     },
